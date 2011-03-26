@@ -1,0 +1,14 @@
+Allows you to create Rails migrations that will only run in the specified environment
+
+You can do this 2 ways:
+
+1. Extend EnvSpecificMigration::LocalOnlyMigration. This will only run in the test and development test environments
+
+class CreateAccount < EnvSpecificMigration::LocalOnlyMigration
+
+2. Use the run_migration_only_in method 
+
+class CreateAccounbt < ActiveRecord::Migration
+   run_migration_only_in(:test, :development)
+   .....
+end
