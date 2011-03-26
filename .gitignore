@@ -1,6 +1,4 @@
-*.log
-*.sqlite3
-/pkg/*
+*.gem
 .bundle
-.rvmrc
 Gemfile.lock
+pkg/*
