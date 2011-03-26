@@ -16,10 +16,10 @@ module EnvSpecificMigration
               # puts "in migrate_with_filtered_migration(#{direction}"
               #               puts "filtered environments: #{filtered_environments.inspect}"
               if filtered_environments.include?(Rails.env.to_sym)
-                 puts "-- running migration"
+                 puts "-- running environment specific migration"
                  migrate_without_filtered_migration(direction)
               else
-                 puts "-- ignoring migration"
+                 puts "-- ignoring environment specific migration"
               end
               #up_without_filterd_migration(&block)
             end
