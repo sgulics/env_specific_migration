@@ -18,37 +18,41 @@ module EnvSpecificMigration
 
     # Will only run a migration if its in the comma delimited list of environment symbols
     def run_migration_only_in(*env)
-      unless self.respond_to? :migrate_without_filtered_migration
-        extend RailsVersionFilterMethods
-        
-        class << self
-          extend RailsVersionFilterMethods
-          def migrate_with_filtered_migration(direction)
-            if filtered_environments.include?(Rails.env.to_sym)
-              puts "-- running environment specific migration"
-              migrate_without_filtered_migration(direction)
-            else
-              puts "-- ignoring environment specific migration"
+      extend RailsVersionFilterMethods
+      
+      less_than_rails_3_1 do
+        unless self.respond_to? :migrate_without_filtered_migration
+          class << self
+            def migrate_with_filtered_migration(direction)
+              if filtered_environments.include?(Rails.env.to_sym)
+                puts "-- running environment specific migration"
+                migrate_without_filtered_migration(direction)
+              else
+                puts "-- ignoring environment specific migration"
+              end
             end
+            alias_method_chain :migrate, :filtered_migration
           end
-          
-          # We need the following because Rails 3.1 moves the migrate method to an instance method.
-          # There is a delegate that is used to provide for backwards compatibility, however in order
-          # to allow the alias_method_chain to work, the method already has to exist.
-          rails_3_1_and_up do
-            def migrate(name, *args, &block)
-              (delegate || superclass.delegate).send(name, *args, &block)
-            end
-          end
-
-          alias_method_chain :migrate, :filtered_migration
+          class_inheritable_accessor :filtered_environments
         end
-        
-        less_than_rails_3_1 { class_inheritable_accessor :filtered_environments }
-        rails_3_1_and_up    { class_attribute :filtered_environments }
-
-        self.filtered_environments = env
       end
+      
+      # In Rails 3.1, the #migrate method was moved to an instance method. Additionally, class_inheritable_accessor
+      # has been replaced by class_attribute.
+      rails_3_1_and_up do
+        define_method(:migrate_with_filtered_migration) do |direction|
+          if self.class.filtered_environments.include?(Rails.env.to_sym)
+            puts "-- running environment specific migration"
+            migrate_without_filtered_migration(direction)
+          else
+            puts "-- ignoring environment specific migration"
+          end
+        end
+        alias_method_chain :migrate, :filtered_migration
+        class_attribute :filtered_environments
+      end
+      
+      self.filtered_environments = env
     end
   end
 
