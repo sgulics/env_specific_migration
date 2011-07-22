@@ -17,7 +17,8 @@ function run {
   bundle exec rspec spec
 
   echo 'Running bundle exec rspec spec against Rails 3.1.0.rc4'
-  RAILS_VERSION='3.1.0.rc4' bundle update rails 
+  export RAILS_VERSION='3.1.0.rc4' 
+  bundle update rails 
   bundle exec rspec spec
 
 

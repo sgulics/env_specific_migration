@@ -25,6 +25,14 @@ describe "env specific migration" do
     table_exists?("dogs").should_not be_true
     table_exists?("invoices").should be_true
   end
+  
+  it "should set the environments that the migration should run in" do
+    CreateInvoices.filtered_environments.should eql(["production","test"])
+    CreateUsers.filtered_environments.should eql([:development]) 
+    CreateDogs.filtered_environments.should eql([/^dev/])
+    CreateAccounts.filtered_environments.should eql([:production])
+    
+  end
 
   def table_exists?(table)
     ActiveRecord::Base.connection.execute("select * from sqlite_master where name = '#{table}'").size == 1
