@@ -82,3 +82,26 @@ class CreateDogs < ActiveRecord::Migration
   end
 end
 
+class CreateInvoices < ActiveRecord::Migration
+
+  run_migration_only_in "production", "test"
+
+  if less_than_rails_3_1?
+    def self.up
+      create_table :invoices do |t|
+        t.string :name
+      end
+    end
+
+    def self.down
+      drop_table :invoices
+    end
+  else
+    def change
+      create_table :invoices do |t|
+        t.string :name
+      end
+    end
+  end
+
+end

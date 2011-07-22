@@ -14,14 +14,16 @@ describe "env specific migration" do
     check_table("users").size.should eql(1) 
     check_table("accounts").size.should eql(0) 
     check_table("dogs").size.should eql(1) 
+    check_table("invoices").size.should eql(0) 
   end
 
-  it "should only create accounts in production" do
+  it "should only create accounts and invoices in production" do
     Rails.env = "production"
     run_migrations
     check_table("users").size.should eql(0) 
     check_table("accounts").size.should eql(1) 
     check_table("dogs").size.should eql(0) 
+    check_table("invoices").size.should eql(1) 
   end
 
   def check_table(table)
@@ -29,7 +31,7 @@ describe "env specific migration" do
   end
    
   def clean_database!
-    models = ["users","accounts","dogs"]
+    models = ["users","accounts","dogs","invoices"]
             
     models.each do |model|
       ActiveRecord::Base.connection.execute "drop table #{model}" rescue nil
@@ -55,10 +57,12 @@ describe "env specific migration" do
       CreateUsers.migrate :up
       CreateAccounts.migrate :up
       CreateDogs.migrate :up
+      CreateInvoices.migrate :up
     else
       CreateUsers.new.migrate :up
       CreateAccounts.new.migrate :up
       CreateDogs.new.migrate :up
+      CreateInvoices.new.migrate :up
     end
   end  
 
