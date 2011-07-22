@@ -11,23 +11,23 @@ describe "env specific migration" do
   it "should only create users and dogs in development" do
     Rails.env = "development"
     run_migrations
-    check_table("users").size.should eql(1) 
-    check_table("accounts").size.should eql(0) 
-    check_table("dogs").size.should eql(1) 
-    check_table("invoices").size.should eql(0) 
+    table_exists?("users").should be_true
+    table_exists?("accounts").should_not be_true
+    table_exists?("dogs").should be_true
+    table_exists?("invoices").should_not be_true
   end
 
   it "should only create accounts and invoices in production" do
     Rails.env = "production"
     run_migrations
-    check_table("users").size.should eql(0) 
-    check_table("accounts").size.should eql(1) 
-    check_table("dogs").size.should eql(0) 
-    check_table("invoices").size.should eql(1) 
+    table_exists?("users").should_not be_true
+    table_exists?("accounts").should be_true
+    table_exists?("dogs").should_not be_true
+    table_exists?("invoices").should be_true
   end
 
-  def check_table(table)
-    ActiveRecord::Base.connection.execute("select * from sqlite_master where name = '#{table}'")
+  def table_exists?(table)
+    ActiveRecord::Base.connection.execute("select * from sqlite_master where name = '#{table}'").size == 1
   end
    
   def clean_database!
