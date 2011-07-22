@@ -2,6 +2,6 @@
 .bundle
 Gemfile.lock
 pkg/*
-db/*.sqlite3
+*.sqlite3
 *.log
 
