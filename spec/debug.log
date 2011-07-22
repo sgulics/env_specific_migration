@@ -1,0 +1,576 @@
+# Logfile created on 2011-07-21 17:02:32 -0400 by logger.rb/25413
+  [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35mSQL (2.7ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35mSQL (0.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+SQLite3::SQLException: table "users" already exists: CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users, accounts, dogs[0m
+SQLite3::SQLException: near ",": syntax error: drop table users, accounts, dogs
+  [1m[36mSQL (2.9ms)[0m  [1mdrop table users[0m
+  [1m[35mSQL (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (2.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.3ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (2.7ms)[0m  [1mdrop table users[0m
+  [1m[35mSQL (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (1.0ms)[0m  [1mdrop table dogs[0m
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.1ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.2ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.4ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (2.7ms)[0m  [1mdrop table users[0m
+  [1m[35mSQL (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (1.2ms)[0m  [1mdrop table dogs[0m
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.3ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[36mSQL (2.9ms)[0m  [1mdrop table users[0m
+  [1m[35mSQL (0.2ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (1.3ms)[0m  [1mdrop table dogs[0m
+  [1m[35mSQL (0.2ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.3ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.2ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[36mSQL (2.7ms)[0m  [1mdrop table users[0m
+  [1m[35mSQL (0.2ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (1.0ms)[0m  [1mdrop table dogs[0m
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.0ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[36mSQL (1.9ms)[0m  [1mdrop table users[0m
+  [1m[35mSQL (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (1.1ms)[0m  [1mdrop table dogs[0m
+  [1m[35mSQL (0.2ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.1ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.3ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.2ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.2ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[36mSQL (2.8ms)[0m  [1mdrop table users[0m
+  [1m[35mSQL (0.2ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (1.2ms)[0m  [1mdrop table dogs[0m
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (0.9ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (1.3ms)[0m  drop table users
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (1.1ms)[0m  drop table dogs
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (2.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.3ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (1.1ms)[0m  drop table users
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (1.0ms)[0m  drop table dogs
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (2.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.2ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (1.0ms)[0m  drop table users
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (0.9ms)[0m  drop table dogs
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (2.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.1ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[36mSQL (2.8ms)[0m  [1mdrop table users[0m
+  [1m[35mSQL (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (1.1ms)[0m  [1mdrop table dogs[0m
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.3ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (1.1ms)[0m  drop table users
+  [1m[36mSQL (0.2ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (0.9ms)[0m  drop table dogs
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.1ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (0.9ms)[0m  drop table users
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (1.3ms)[0m  drop table dogs
+  [1m[36mSQL (1.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.0ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.2ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[36mSQL (3.1ms)[0m  [1mdrop table users[0m
+  [1m[35mSQL (0.2ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (1.1ms)[0m  [1mdrop table dogs[0m
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.2ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (1.3ms)[0m  drop table users
+  [1m[36mSQL (0.2ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (1.1ms)[0m  drop table dogs
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (2.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.1ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (1.0ms)[0m  drop table users
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (1.0ms)[0m  drop table dogs
+  [1m[36mSQL (1.1ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36mSQL (0.2ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'dogs'
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (2.0ms)[0m  drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.2ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (1.3ms)[0m  drop table users
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (1.0ms)[0m  drop table dogs
+  [1m[36mSQL (1.4ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'dogs'
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (2.7ms)[0m  drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.3ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.2ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (1.3ms)[0m  drop table users
+  [1m[36mSQL (0.2ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (1.2ms)[0m  drop table dogs
+  [1m[36mSQL (1.2ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'dogs'
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (1.4ms)[0m  drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (2.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.2ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.2ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (1.0ms)[0m  drop table users
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (1.1ms)[0m  drop table dogs
+  [1m[36mSQL (1.5ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'dogs'
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (2.6ms)[0m  drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.1ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (1.2ms)[0m  drop table users
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (1.0ms)[0m  drop table dogs
+  [1m[36mSQL (1.2ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'dogs'
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (1.3ms)[0m  drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.0ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (1.1ms)[0m  drop table users
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (1.1ms)[0m  drop table dogs
+  [1m[36mSQL (1.2ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (0.2ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36mSQL (0.2ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'dogs'
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (1.8ms)[0m  drop table accounts
+  [1m[36mSQL (0.2ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.6ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (1.1ms)[0m  drop table users
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (1.1ms)[0m  drop table dogs
+  [1m[36mSQL (1.0ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'dogs'
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (2.8ms)[0m  drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.2ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.2ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (1.1ms)[0m  drop table users
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (1.1ms)[0m  drop table dogs
+  [1m[36mSQL (1.3ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'dogs'
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (2.4ms)[0m  drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.2ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (1.0ms)[0m  drop table users
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (1.3ms)[0m  drop table dogs
+  [1m[36mSQL (1.2ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'dogs'
+  [1m[36m (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35m (2.8ms)[0m  drop table accounts
+  [1m[36m (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35m (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36m (0.1ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35m (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36m (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35m (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36m (0.1ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[36m (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35m (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36m (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35m (0.3ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36m (0.1ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35m (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36m (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35m (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36m (0.1ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[36m (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35m (0.1ms)[0m  drop table accounts
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[36m (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35m (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36m (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35m (1.1ms)[0m  drop table users
+  [1m[36m (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35m (1.1ms)[0m  drop table dogs
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36m (0.1ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[35m (0.1ms)[0m  select * from sqlite_master where name = 'dogs'
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (1.6ms)[0m  drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.2ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (1.1ms)[0m  drop table users
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (1.1ms)[0m  drop table dogs
+  [1m[36mSQL (1.2ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'dogs'
+  [1m[36m (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35m (2.4ms)[0m  drop table accounts
+  [1m[36m (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35m (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36m (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35m (1.3ms)[0m  drop table users
+  [1m[36m (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35m (1.1ms)[0m  drop table dogs
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36m (0.1ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[35m (0.1ms)[0m  select * from sqlite_master where name = 'dogs'
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (2.6ms)[0m  drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.2ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (1.2ms)[0m  drop table users
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (1.2ms)[0m  drop table dogs
+  [1m[36mSQL (1.2ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36mSQL (0.2ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'dogs'
+  [1m[36m (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35m (2.6ms)[0m  drop table accounts
+  [1m[36m (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36m (0.2ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35m (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36m (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35m (1.3ms)[0m  drop table users
+  [1m[36m (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35m (1.1ms)[0m  drop table dogs
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36m (0.1ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[35m (0.1ms)[0m  select * from sqlite_master where name = 'dogs'
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (1.7ms)[0m  drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.0ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (1.2ms)[0m  drop table users
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (1.1ms)[0m  drop table dogs
+  [1m[36mSQL (0.9ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'dogs'
+  [1m[36m (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35m (2.9ms)[0m  drop table accounts
+  [1m[36m (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35m (3.0ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36m (0.2ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35m (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36m (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35m (2.3ms)[0m  drop table users
+  [1m[36m (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35m (2.4ms)[0m  drop table dogs
+  [1m[36m (249.4ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36m (0.1ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[35m (0.1ms)[0m  select * from sqlite_master where name = 'dogs'
+  [1m[36mSQL (0.3ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35mSQL (2.6ms)[0m  drop table accounts
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (1.3ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35mSQL (1.2ms)[0m  drop table users
+  [1m[36mSQL (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35mSQL (1.0ms)[0m  drop table dogs
+  [1m[36mSQL (1.1ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36mSQL (0.1ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[35mSQL (0.1ms)[0m  select * from sqlite_master where name = 'dogs'
+  [1m[36m (0.4ms)[0m  [1mdrop table users[0m
+SQLite3::SQLException: no such table: users: drop table users
+  [1m[35m (2.7ms)[0m  drop table accounts
+  [1m[36m (0.2ms)[0m  [1mdrop table dogs[0m
+SQLite3::SQLException: no such table: dogs: drop table dogs
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mselect * from sqlite_master where name = 'users'[0m
+  [1m[35m (0.1ms)[0m  select * from sqlite_master where name = 'accounts'
+  [1m[36m (0.1ms)[0m  [1mselect * from sqlite_master where name = 'dogs'[0m
+  [1m[35m (1.2ms)[0m  drop table users
+  [1m[36m (0.1ms)[0m  [1mdrop table accounts[0m
+SQLite3::SQLException: no such table: accounts: drop table accounts
+  [1m[35m (1.0ms)[0m  drop table dogs
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  select * from sqlite_master where name = 'users'
+  [1m[36m (0.1ms)[0m  [1mselect * from sqlite_master where name = 'accounts'[0m
+  [1m[35m (0.1ms)[0m  select * from sqlite_master where name = 'dogs'

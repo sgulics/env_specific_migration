@@ -52,13 +52,14 @@ module EnvSpecificMigration
       if rails_3_1_and_up?
         include EnvSpecificMigration::SupportMethods
         alias_method_chain :migrate, :filtered_migration
+        class_attribute :filtered_environments
       else
         class << self
           include EnvSpecificMigration::SupportMethods
           alias_method_chain :migrate, :filtered_migration 
         end   
+        class_inheritable_accessor :filtered_environments
       end
-      class_inheritable_accessor :filtered_environments
       self.filtered_environments = env
     end
   end
