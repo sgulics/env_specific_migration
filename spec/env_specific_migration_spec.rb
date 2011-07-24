@@ -9,7 +9,7 @@ describe "env specific migration" do
   end
  
   it "should only create users and dogs in development" do
-    Rails.env = "development"
+    set_env "development"
     run_migrations
     table_exists?("users").should be_true
     table_exists?("accounts").should_not be_true
@@ -18,7 +18,7 @@ describe "env specific migration" do
   end
 
   it "should only create accounts and invoices in production" do
-    Rails.env = "production"
+    set_env "production"
     run_migrations
     table_exists?("users").should_not be_true
     table_exists?("accounts").should be_true
@@ -36,6 +36,14 @@ describe "env specific migration" do
 
   def table_exists?(table)
     ActiveRecord::Base.connection.execute("select * from sqlite_master where name = '#{table}'").size == 1
+  end
+  
+  def set_env(env)
+    if defined? Rails.env
+      Rails.env = env
+    else
+      ENV['RAILS_ENV'] = env
+    end
   end
    
   def clean_database!

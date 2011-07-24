@@ -15,8 +15,15 @@ rescue Bundler::GemNotFound
   raise RuntimeError, "Bundler couldn't find some gems." +
     "Did you run \`bundlee install\`?"
 end
+
 Bundler.require
-require 'active_support/benchmarkable'
+
+begin 
+  require 'active_support/benchmarkable' 
+rescue LoadError  
+  nil
+end
+require 'rails/version' 
 require "active_record"
 
 ENV['DB'] ||= 'development'

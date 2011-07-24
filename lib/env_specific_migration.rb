@@ -26,18 +26,27 @@ module EnvSpecificMigration
 
     def run_migration?
       result = false
+      env = rails_env
       self.filtered_environments.each do |e|
         case e
         when Regexp
-          result = e =~ Rails.env.to_s
+          result = e =~ env.to_s
         when String
-          result = e == Rails.env
+          result = e == env.to_s
         when Symbol
-          result = e == Rails.env.to_sym
+          result = e.to_s == env
         end
         break if result    
       end
       result
+    end
+
+    def rails_env
+      if defined?(Rails.env)
+        Rails.env
+      else
+        ENV["RAILS_ENV"]
+      end
     end
 
   end

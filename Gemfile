@@ -12,4 +12,4 @@ else
 end
 gem 'rspec'
 gem 'sqlite3'
-
+gem 'ruby-debug19'
