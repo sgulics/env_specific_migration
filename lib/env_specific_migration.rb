@@ -17,10 +17,10 @@ module EnvSpecificMigration
 
     def migrate_with_filtered_migration(direction)
       if run_migration?
-        puts "-- running environment specific migration"
+        say "running environment specific migration"
         migrate_without_filtered_migration(direction)
       else
-        puts "-- ignoring environment specific migration"
+        say "ignoring environment specific migration"
       end
     end
 
